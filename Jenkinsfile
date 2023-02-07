@@ -9,7 +9,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'docker build -t vasunthara/jen_doc_ex .'
+        sh 'docker build -t vasunthara/jen_doc .'
       }
     }
     stage('Login') {
@@ -19,7 +19,7 @@ pipeline {
     }
     stage('Push') {
       steps {
-        sh 'docker push vasunthara/jen_doc_ex'
+        sh 'docker push vasunthara/jen_doc'
       }
     }
   }
