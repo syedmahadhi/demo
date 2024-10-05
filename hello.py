@@ -1,5 +1,10 @@
-a = "Hello Worlddddddd"
+from flask import Flask
 
-b = a
+app = Flask(--__name__)
 
-print(b)
+@app.route('/hello', methods=['GET'])
+def hello_world():
+    return "Hello World"
+
+if __name__ == '__main__':
+    app.run()
